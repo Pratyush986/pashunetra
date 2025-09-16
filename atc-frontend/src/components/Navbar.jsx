@@ -7,7 +7,7 @@ const navLinks = [
     { name: "Upload & Analyze", page: "home" },
     { name: "Detailed Report", page: "report" },
     { name: "About ATC", page: "about" },
-
+    
 ];
 
 // Updated Logo component with navigation
@@ -63,7 +63,7 @@ export default function Navbar({ currentPage, onNavigate }) {
 
     const AuthButtons = ({ isMobile = false }) => (
         <div className={`flex items-center gap-4 ${isMobile ? "flex-col w-full" : ""}`}>
-
+            
             <button
                 onClick={() => onNavigate("support")}
                 className="px-4 py-2 text-sm font-medium transition rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200/60 dark:hover:bg-gray-700/60"
